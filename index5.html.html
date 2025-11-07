@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BHAWANI GP. PVT. LTD.</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Playfair+Display:wght@700&display=swap');
+
+        body {
+            margin: 0;
+            background: #fafafa;
+            font-family: 'Poppins', sans-serif;
+            color: #1c1c1c;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 40px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            box-shadow: 0 4px 30px rgb(0 0 0 / 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 28px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #222;
+            cursor: default;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #444;
+            font-weight: 600;
+            margin-left: 40px;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #8a6e49;
+            /* warm gold accent */
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 85vh;
+            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center/cover;
+            position: relative;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(28, 28, 28, 0.5);
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+        }
+
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 5rem;
+            margin: 0;
+            line-height: 1.1;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.35rem;
+            color: #f1e9da;
+            font-weight: 300;
+            margin-top: 0;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 60px auto 120px;
+            padding: 0 24px;
+            text-align: center;
+        }
+
+        main h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 3rem;
+            margin-bottom: 40px;
+            color: #8a6e49;
+        }
+
+        main p {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            margin-bottom: 40px;
+            color: #3b3b3b;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-gap: 24px;
+        }
+
+        .gallery img {
+            border-radius: 12px;
+            max-width: 100%;
+            height: 210px;
+            object-fit: cover;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #222;
+            color: #ddd;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 3rem;
+                letter-spacing: 3px;
+            }
+
+            header {
+                padding: 30px 20px;
+            }
+
+            nav a {
+                margin-left: 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Bhawani Group Of Private Industries</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unmatched Excellence</h1>
+            <p>Crafting a legacy of power, precision, and prestige</p>
+        </div>
+    </section>
+
+    <main>
+
+        <section id="services" style="margin-top: 80px; text-align: center;">
+            <h2
+                style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 3rem; margin-bottom: 40px; color: #8a6e49;">
+                Our Services
+            </h2>
+            <p
+                style="font-size: 1.2rem; line-height: 1.7; margin-bottom: 40px; color: #3b3b3b; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Delivering unmatched quality and craftsmanship, we specialize in creating tailored solutions that
+                elevate your business and lifestyle to new heights.
+            </p>
+            <div
+                style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <div
+                    style="flex: 1 1 250px; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(138, 110, 73, 0.15);">
+                    <h3
+                        style="font-family: 'Playfair Display', serif; font-weight: 600; color: #8a6e49; margin-bottom: 15px;">
+                        Custom Design</h3>
+                    <p style="font-weight: 300; color: #555;">Bespoke solutions tailored to perfection for your unique
+                        needs.</p>
+                </div>
+                <div
+                    style="flex: 1 1 250px; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(138, 110, 73, 0.15);">
+                    <h3
+                        style="font-family: 'Playfair Display', serif; font-weight: 600; color: #8a6e49; margin-bottom: 15px;">
+                        Consulting</h3>
+                    <p style="font-weight: 300; color: #555;">Expert guidance to transform your vision into reality.</p>
+                </div>
+                <div
+                    style="flex: 1 1 250px; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(138, 110, 73, 0.15);">
+                    <h3
+                        style="font-family: 'Playfair Display', serif; font-weight: 600; color: #8a6e49; margin-bottom: 15px;">
+                        Luxury Craftsmanship</h3>
+                    <p style="font-weight: 300; color: #555;">Meticulous attention to detail ensuring excellence in
+                        every project.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Like the world's finest machines, I blend performance with timeless style. Every project I touch turns
+                to gold — absolute mastery in every detail, just like the bespoke craftsmanship behind Rolls-Royce.
+            </p>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=80"
+                alt="Luxury Shot 1">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80"
+                alt="Luxury Shot 2">
+            <img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=800&q=80"
+                alt="Luxury Shot 3">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+                alt="Luxury Shot 4">
+        </section>
+
+        <section id="contact" style="margin-top: 80px;">
+            <h2>Contact</h2>
+            <p>Luxury isn’t just a product; it’s a connection. Reach out to discuss how I can elevate your experience.
+            </p>
+            <p>Email:aditya9009singh0@gmail.com</p>
+            <p>Phone: +91 926 281 7017</p>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
